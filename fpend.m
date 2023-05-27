@@ -1,4 +1,7 @@
 function ydot = fpend(y)
+
+   %Model the diff-eq governing pendulum motion
+   
     ydot(1)=y(3);
     ydot(2)=y(4);
     ydot(3)=(-3*sin(y(1))-sin(y(1)-2*y(2))-(2*sin(y(1)-y(2))*...
